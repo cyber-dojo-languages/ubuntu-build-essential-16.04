@@ -1,7 +1,7 @@
 FROM  ubuntu:17.04
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update && apt-get install --no-install-recommends --yes \
+RUN apt-get update
+RUN apt-get install --yes \
   build-essential \
-  automake \
-  git
+  automake
